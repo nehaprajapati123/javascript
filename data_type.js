@@ -55,3 +55,14 @@ typeof 42.7;  // Output: "number"
 typeof 5.5e-6;  // Output: "number"
 typeof Infinity;  // Output: "number"
 typeof NaN;
+
+
+type conversion:-
+
+var a=102030;
+c=a.toString()
+console.log(typeof(c))
+d=parseInt(c)
+console.log(typeof(d));
+e=parseFloat(d)
+console.log(typeof(e));
