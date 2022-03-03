@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and ClearTimeOut</title>
+</head>
+<body>
+    <div id="container">
+        this is container
+    </div>
+    <script>
+        function fun(name, text){
+    console.log("hello good morning"+ " "+name+" "+ text);        
+
+        }
+        // setTimeout(fun, 5000 ,"neha", "take care")  // do not call the function name just need only to wriite the name in setTimeOut.
+       
+       
+       
+    //    timeOut= setTimeout(fun, 5000 ,"neha", "take care")
+    //    console.log(timeOut);   //    id will return by consoling
+
+        // clearTimeout(timeOut)    
+
+
+
+        // setInterval(fun , 1000, "neha", "take care")   // give the number of  continuous execution
+       
+       
+    //    interval= setInterval(fun , 1000, "neha", "take care")   // give the number of  continuous execution
+    //    clearInterval(interval)
+
+
+    function displaytime() {
+        time=new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML=time
+
+    }
+    setInterval(displaytime,1000);
+
+
+    </script>
+</body>
+</html>

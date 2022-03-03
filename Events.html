@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn{
+            padding: 5px;
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            border-color: white;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>this is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum porro facere omnis assumenda similique facilis inventore, molestias ipsa quod. Incidunt, pariatur, possimus quam corrupti nam hic quasi natus voluptatum optio sequi odit maiores quas! Iure nesciunt odio eum, dolorem minus provident itaque rem praesentium officia magni illo voluptatibus harum, repellat sit non dolores molestias excepturi odit vero est assumenda quibusdam nihil! Delectus sapiente doloremque temporibus. Dolor sequi odio doloribus saepe in? Reiciendis sed aut cum quae cumque nam esse commodi eius assumenda quidem? Eaque facere illum sunt quia magni eligendi similique labore eum corrupti quaerat, accusantium quos odit mollitia, modi sequi veritatis. Quae at harum commodi. Similique distinctio quidem architecto odit non? Debitis provident voluptatum, dolores pariatur, voluptas dolorum fuga cumque delectus enim quis laudantium id quidem eius, tenetur minus. Odit, corrupti! Et quisquam id error amet laudantium velit illo aperiam excepturi consectetur eum expedita explicabo aut nihil dolor debitis, adipisci quis? Quaerat amet magni, dicta exercitationem in, voluptatem, eligendi quam vel quia tempore voluptatum reiciendis voluptatibus accusamus sint. Ab voluptatem deserunt dolorum praesentium eius! Explicabo dolores provident delectus. Qui mollitia itaque illum, aut corporis voluptatem temporibus aperiam voluptas, velit ab nam maiores unde, expedita harum atque nemo laborum quam?</p>
+    </div>
+    <button id="btn" onclick="hide()">show/hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('mouse inside')
+        }) ;
+        para.addEventListener('mouseout',function run(){
+            alertf87 ('mouse out')
+        })
+        function hide(){
+           let btn=document.getElementById('btn');
+           if (para.style.display!= 'none'){
+           para.style.display = 'none'
+
+        }
+             else{
+            para.style.display = 'block';   
+            }
+        }
+    
+    </script>
+
+</body>
+</html>

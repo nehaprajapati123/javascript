@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Satyam shukla</h1>
+        <div class="colo" id="fr">hiuhiuhiuuh</div>
+        <div class="colo" id="sc">shiuhiuhui</div>
+        <div class="colo" id="gh">udfuhiuhfo</div>
+        <div class="colo" id="ph">miss u javascript</div>
+    </div>
+    <script>
+        //I add a new highLighting text feature on the text.
+        // Creating a new Div element
+        let div = document.createElement('div');
+        div.setAttribute("id", "edit")
+        div.innerText = "Double Click on me to Edit";
+
+        // It will increase the text size when mouseover on it.
+        div.addEventListener('mouseover', function () {
+            div.style.fontSize = '150%'
+        })
+
+        // Appending the element to the body
+        document.body.appendChild(div)
+
+        // Creating the editable element
+        //Whenever someone double click on the text it will turn to editable.
+        let inpt = document.createElement('input');
+        inpt.setAttribute("value", "")
+        document.getElementById('edit').addEventListener('dblclick', function () {
+            div.replaceWith(inpt)
+        });
+
+        // Click outside to save the text into local storage as (Edited) name.
+        inpt.addEventListener('blur', function () {
+            localStorage.setItem('Edited', JSON.stringify(inpt.value))
+        })
+    </script>
+</body>
+
+</html>
+
+
+
+<!-- let neha=document.getElementById('heading');
+undefined
+console.log(neha)
+VM607:1 <h1 id=​"heading">​Satyam shukla​</h1>​
+undefined
+neha.innerHTML='hjkhjhjkhj'
+'hjkhjhjkhj'
+neha.id='notebook'
+'notebook'
+console.log(neha)
+VM915:1 <h1 id=​"notebook">​hjkhjhjkhj​</h1>​
+undefined
+neha.class='12';
+'12'
+console.log(neha)
+VM1027:1 <h1 id=​"notebook">​hjkhjhjkhj​</h1>​
+undefined
+neha.className='pen';
+'pen'
+console.log(neha)
+VM1132:1 <h1 id=​"notebook" class=​"pen">​hjkhjhjkhj​</h1>​
+undefined -->

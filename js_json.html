@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsson in js</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is container</h1>
+
+    </div>
+    <script>
+        let jsonobj={
+            name:"neha",
+            channel:"code with harry",
+            friend:"satyam",
+
+
+        }
+        console.log(jsonobj);
+         let myjsonstr=JSON.stringify(jsonobj)
+         console.log(myjsonstr);
+
+
+
+        myjsonstr= myjsonstr.replace('neha','ritesh');
+         console.log(myjsonstr);
+
+
+          newjsonobj=JSON.parse(myjsonstr);
+          console.log(newjsonobj);
+    </script>
+</body>
+</html>
